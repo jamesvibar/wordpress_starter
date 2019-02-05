@@ -1,0 +1,20 @@
+{
+  "name": "jameswp",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/jemsvibar/wordpress_starter.git",
+  "author": "James Raphael Vibar <vibarjamess@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "concurrently \"npm run parcel-dev\" \"npm run browsersync\"",
+    "build:production": "parcel build ./src/js/all.js",
+    "parcel-dev": "parcel watch ./src/js/all.js",
+    "browsersync": "browser-sync start -c ./config/bs-config.js"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "concurrently": "^4.1.0",
+    "parcel-bundler": "^1.11.0",
+    "sass": "^1.17.0"
+  }
+}
