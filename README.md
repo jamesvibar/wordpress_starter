@@ -26,8 +26,11 @@ A starter theme bundled with parceljs and browser-sync. Streamlines your develop
 
 ### Installation
 
-1. npm run install
-2. npm start - Start development server
+```
+npm run install               Install the required dependencies
+npm start                     Starts the development server
+npm run build:production      Compiles assets for production (minified and babel)
+```
 
 ### Namespace
 
